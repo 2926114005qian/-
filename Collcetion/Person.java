@@ -1,6 +1,7 @@
 package Collection;
 
-public class Person {
+
+public class Person implements Comparable {
 	private String name;
 	private int age;
 	@Override
@@ -36,5 +37,14 @@ public class Person {
 	}
 	public String toString() {
 		return name+":"+age;
+	}
+	@Override
+	public int compareTo(Object o) {
+		Person p=(Person)o;
+		int temp=this.name.compareTo(p.name);
+		return temp==0?this.age-p.age:temp;
+//		int temp=this.age-p.age;
+//		return temp==0?this.name.compareTo(p.name):temp;
+
 	}
 }
