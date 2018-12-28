@@ -1,4 +1,6 @@
-package ï¿½ï¿½ï¿½ï¿½API;
+package ÆäËûAPI;
+
+import java.util.Calendar;
 
 public class CalendarDemo {
 
@@ -13,7 +15,7 @@ public class CalendarDemo {
 		int month=c.get(Calendar.MONTH)+1;
 		int day=c.get(Calendar.DAY_OF_MONTH);
 		int week=c.get(Calendar.WEEK_OF_MONTH);
-		System.out.println(year+"ï¿½ï¿½"+month+"ï¿½ï¿½"+day+"ï¿½ï¿½"+week);
+		System.out.println(year+"Äê"+month+"ÔÂ"+day+"ÈÕ"+week);
 		
 	}
 
